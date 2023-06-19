@@ -1,0 +1,215 @@
+body{
+    background-image: linear-gradient(to right, rgb(136, 204, 104), rgb(91, 150, 147));
+    margin: 0;
+}
+
+header{
+    margin-top: -22px;
+    background-color: rgba(168, 167, 167, 0.664);
+    border-bottom: 1px solid black;
+    width: 100%;
+    height: 10vh;
+    max-height: 15%;
+    position: sticky;
+
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+header>h2{
+    padding-top: 1%;
+    color: aliceblue;
+    font-family: Eco, sans-serif;
+    font-size: 25px;
+}
+
+#content{
+    text-align: center;
+    font-size: 20px;
+    color: rgb(39, 39, 39);
+}
+
+#links{
+    text-align: center;
+    justify-content: center;
+    margin-top: 1vh;
+}
+
+a{
+    padding-left:  1.5em;
+    padding-right: 1.5em;
+    text-decoration: none;
+
+    color: rgb(11, 59, 15);
+    font-size: 1.5em;
+}
+
+a:hover{
+    border-radius: 20px;
+    background-color: rgb(184, 184, 184);
+}
+
+article{
+    padding-top: 0.3vh;
+    padding-bottom: 2vw;
+    align-items: center;
+    justify-content: center;
+}
+
+.caixaFundo{
+    width: 140vh;
+    height: 60vh;
+    margin: auto 15%;
+    background-color: rgba(67, 143, 48, 0.534);
+    border-radius: 25px;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+}
+
+.caixas{
+    width: 45vh;
+    max-width: 45%;
+    height: 50vh;
+    border-radius: 20px;
+}
+
+h3{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: x-large;
+    color: rgb(49, 49, 49) ;
+    margin-top: 3%;
+}
+
+.caixas>ul>li{
+    color: rgb(49, 49, 49);
+    font-family: sans-serif;
+    font-size: large;
+
+    padding-block-start: 5px;
+    margin-left: -20px;
+
+    text-align: justify;
+    word-spacing: -1px;
+}
+
+@font-face {
+    font-family: Eco;
+    src: url(fontes/AgenorNeue-Regular.otf);
+}
+
+span{
+    color: rgb(8, 85, 5);
+    font-family: Eco, sans-serif;
+}
+
+.caixas:hover{
+    transform: scale(1.1);
+    transition: 0.8s;
+    
+    border: 1px solid black;
+}
+
+.caixas:not(:hover){
+    transition: 0.5s;
+}
+
+#primeira{
+    background-color: rgb(202, 202, 202);
+    align-self: center;
+    padding: 10px;
+    margin: 40px;
+}
+
+#segunda{
+    background-color: rgb(202, 202, 202);
+    align-self: center;
+    padding: 10px;
+    margin: 40px;
+}
+
+button{
+    background-color: rgba(23, 138, 0, 0.712);
+    color: rgb(212, 212, 212);
+    font-family: sans-serif;
+    font-size: 24px;
+    font-weight: bolder;
+    border: 1px solid rgb(0, 0, 0, 0.712);
+    border-radius: 20px;
+    width: 45vh;
+    height: 12vh;
+    margin-top: 2vh;
+
+    position: sticky;
+}
+
+button:hover{
+    background-color: rgb(16, 134, 0);
+    border: 1px solid blue;
+    transition: linear 0.2s;
+
+    cursor: pointer;
+}
+
+
+footer{
+    background-color: rgb(168, 167, 167, 0.664);
+    border-top: 1px solid black;
+    height: 10vh;
+    max-height: 15%;
+    position: sticky;
+    justify-content: center;
+    text-align: center;
+}
+
+footer>p{
+    display: inline-block;
+    font-size: 20px;
+    color: aliceblue;
+    font-family: Eco, sans-serif;
+}
+
+@media( max-width: 767px) {
+
+    body{
+        background-image: linear-gradient(to bottom, rgb(136, 204, 104), rgb(91, 150, 147));
+    }
+
+    .caixaFundo{
+        flex-direction: column;
+        height: 110vh;
+        width: 85%;
+        margin: auto 11%;
+        align-self: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .caixas {
+        width: 90%;
+        max-width: none;
+        height: 85vh;
+        text-align: center;
+        justify-content: center;
+        align-self: center;
+    }
+
+    #primeira{
+        margin-top: 10px;
+    }
+
+    #segunda{
+        margin-bottom: 25px;
+    }
+
+    .caixas:hover{
+        transform: none;
+    }
+
+    button{
+        height: 30%;
+        margin-top: 0%;
+    }
+}

@@ -1,0 +1,131 @@
+body{
+    background-image: linear-gradient(to right, rgb(136, 204, 104), rgb(91, 150, 147));
+    margin: 0;
+}
+
+header{
+    height: 8vh;
+    width: 100%;
+    margin-top: -21px;
+
+    justify-content: center;
+    text-align: center;
+
+    background-color: rgb(56, 56, 56);
+}
+
+h1{
+    color: aliceblue;
+}
+
+#links{
+    text-align: center;
+    justify-content: center;
+    margin-top: 2vh;
+}
+
+a{
+    padding-left:  1.5em;
+    padding-right: 1.5em;
+    text-decoration: none;
+
+    color: rgb(11, 59, 15);
+    font-size: 1.5em;
+}
+
+a:hover{
+    border-radius: 20px;
+    background-color: rgb(184, 184, 184);
+}
+
+#products{
+    margin-top: 10vh;
+}
+
+main{
+    margin: 1%;
+}
+
+.box{
+    height: 45vh;
+    width: 35vh;
+    background-color: rgba(202, 202, 202, 0.89);
+
+    border: 1px solid rgba(0, 0, 0, 0.747);
+    border-radius: 10px;
+
+    display: inline-block;
+    margin-block: 15px;
+    margin-inline: 15px;
+
+    text-align: center;
+}
+
+.box:hover{
+     transform: scale(1.1);
+    transition: 0.8s;
+    
+    border: 1px solid rgb(0, 119, 255);
+    background-color: rgb(219, 219, 219);
+}
+.box:not(:hover){
+    transition: 0.5s;
+}
+
+.box>img{
+    width: 55%;
+    height: 40%;
+    margin-top: 2.3vh;
+
+    border-radius: 10px;
+
+}
+
+.box>img:hover{
+    transform: scale(1.3);
+    transition: 0.5s;
+}
+
+.cart{
+    margin-top: -1vh;
+    border: none;
+    border-radius: 10px;
+    background-color: rgba(162, 163, 161, 0.842);
+
+    height: 6vh;
+    width: 25vh;
+
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.cart:hover{
+    cursor: pointer;
+    background-color: rgb(48, 145, 48);
+    transition: linear 0.5s;
+}
+
+.cart:not(:hover){
+    transition: 0.2s;
+}
+
+@font-face {
+    font-family: Eco;
+    src: url(fontes/AgenorNeue-Regular.otf);
+}
+
+h1,
+a,
+h2,
+h4,
+.cart{
+    font-family: Eco, sans-serif;
+}
+
+h4{
+    color: rgb(102, 101, 101);
+}
+
+h2{
+    color: rgba(4, 90, 4, 0.801);
+}
