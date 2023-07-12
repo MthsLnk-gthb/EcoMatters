@@ -129,3 +129,18 @@ h4{
 h2{
     color: rgba(4, 90, 4, 0.801);
 }
+
+@media (max-width: 768px) {
+    .box{
+        margin-inline: 5px;
+    }
+
+    a{
+    padding-left:  1em;
+    padding-right: 1em;
+    text-decoration: none;
+
+    color: rgb(11, 59, 15);
+    font-size: 1.5em;
+}
+}
